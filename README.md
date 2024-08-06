@@ -2,6 +2,10 @@
 
 Welcome to the Happy Paws project! This project is a web application that allows users to buy and sell dogs. The application includes user authentication, dog listing management, and an admin dashboard for overseeing the site operations.
 
+
+https://github.com/user-attachments/assets/5d7a447e-6559-485a-b33a-77bff87a4586
+
+
 ## Features
 
 - **User Registration and Login**: Users can register and log in using their username and password.
