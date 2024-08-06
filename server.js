@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 // Configure session management
 app.use(session({
-    secret: '10828218', // Replace with a strong secret key
+    secret: '', // Replace with a strong secret key
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false } // Set to true if using HTTPS
