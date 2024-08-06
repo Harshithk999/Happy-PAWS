@@ -2,7 +2,6 @@
 
 
 *{
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,14 +18,16 @@ body {
 
 nav {
     background-color: #257aca;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 1vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav .logo img {
-    height: 75px;
+    max-height: 75px; 
+    height: 7.5vw;
 }
 
 nav ul {
@@ -37,7 +38,8 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    margin-left: 2vw;
 }
 
 nav ul li a {
@@ -171,13 +173,16 @@ header .banner-text p {
 }
 
 .banner-text h1 {
-    font-size: 3em;
+    /* font-size: 3em; */
+    font-size: 5vw;
     margin: 0;
 }
 
 .banner-text p {
-    font-size: 1.2em;
-    margin-top: 10px;
+    /* font-size: 1.2em; */
+    /* margin-top: 10px; */
+    font-size: 2vw;
+    margin-top: 1vw;
 }
 
 
@@ -187,7 +192,8 @@ main {
     display: flex;
     justify-content: space-around;
     /* margin-top: 20px; */
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 2vw;
 }
 
 /* .actions {
@@ -219,27 +225,36 @@ main {
 .section-container {
     max-width: 100%; /* Set max-width to a percentage to leave space on the sides */
     margin: 0 auto; /* Center the container */
-    padding: 20px 0;
-    gap: 30px;
+    /* padding: 20px 0; */
+    padding: 2vw 0;
+    /* gap: 30px; */
+    gap: 3vw;
 }
 
 .action-section {
     display: flex;
     align-items: center;
-    margin: 10px 0;
-    padding: 40px;
+    /* margin: 10px 0;
+    padding: 40px; */
+    margin: 1vw 0;
+    padding: 4vw;
     background-color: #257aca; /* Light background color */
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: 1vw;
     overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */ /* Subtle shadow */
+    box-shadow: 0vw 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 800px; /* Limit width for a more rectangular shape */
-    height: 250px;
+    /* max-width: 800px; 
+    height: 250px;*/
+    max-width: 80vw; /* Limit width for a more rectangular shape */
+    height: 25vw;
 }
 
 .action-section .image-link {
     flex: 1;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: 1vw;
     overflow: hidden;
 }
 
@@ -251,15 +266,18 @@ main {
 
 .action-section .text-overlay {
     flex: 1;
-    padding: 20px;
-    padding-left: 40px;
+    /* padding: 20px;
+    padding-left: 40px; */
+    padding: 2vw;
+    padding-left: 4vw;
     box-sizing: border-box;
     font-family: 'Antonio', sans-serif; /* Change font as per your preference */
 }
 
 .text-overlay h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 2vw;
 }
 
 .text-overlay p {
@@ -272,7 +290,8 @@ main {
     position: relative;
     display: block;
     overflow: hidden;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    border-radius: 0.8vw;
     text-decoration: none;
     color: black;
     transition: transform 0.3s ease;
@@ -282,7 +301,8 @@ main {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    border-radius: 0.8vw;
     transition: transform 0.3s ease;
 }
 
@@ -293,7 +313,8 @@ main {
 footer {
     background-color: #0c2d48;
     color: #ffffff;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    padding: 2vw 0;
     text-align: center;
 }
 
@@ -302,13 +323,16 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 2vw;
 }
 
 .footer-section {
-    margin: 20px;
+    /* margin: 20px; */
+    margin: 2vw;
     flex: 1;
-    min-width: 250px;
+    /* min-width: 250px; */
+    min-width: 25vw;
 }
 
 .footer-section h2 {
@@ -328,7 +352,7 @@ footer {
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: calc(min(1vw, 10px));
 }
 
 .footer-section ul li a {
@@ -366,5 +390,22 @@ footer {
 
     .text-overlay p {
         font-size: 1em;
+    }
+    .banner-text h1 {
+        font-size: 4vw;
+    }
+
+    .banner-text p {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 3.5vw;
+    }
+
+    .banner-text p {
+        font-size: 1.5vw;
     }
 }

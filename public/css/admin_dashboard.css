@@ -22,9 +22,13 @@ nav {
 }
 
 nav .logo img {
-    height: 75px;
+    max-height: 75px; 
+    height: 7.5vw;
 }
-
+nav ul li {
+    /* margin-left: 20px; */
+    margin-left: 2vw;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -32,9 +36,7 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
+
 
 nav ul li a {
     color: white;
