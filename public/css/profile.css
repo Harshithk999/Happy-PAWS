@@ -1,0 +1,185 @@
+/* Reset default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Climate+Crisis&family=DynaPuff:wght@400..700&family=Honk&family=Kablammo&family=Nabla&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+    background-color: #257aca;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+nav .logo img {
+    height: 75px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: color 0.3s, text-decoration 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #bddeef;
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    padding-top: 95px; /* Add gap from the top */
+    min-height: 50vh;
+}
+
+.sidebar {
+    background-color: #3d466d;
+    width: 40%;
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .dog-image img {
+    width: 100%; /* Extend the dog image */
+    height: 400px;
+    margin: 5px;
+    border-radius: 0; /* Remove border-radius */
+}
+
+.main-content {
+    width: 60%;
+    padding: 40px;
+}
+
+.main-content h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    background-color: rgba(246, 234, 242, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.profile-info h2 {
+    margin: 10px 0;
+}
+
+.profile-info form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+}
+
+.profile-info label {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+    color: #145da0;
+}
+
+.profile-info input {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.profile-info input:focus {
+    border-color: #257aca;
+    outline: none;
+    box-shadow: 0 0 5px rgba(20, 93, 160, 0.5);
+}
+
+.profile-info button {
+    background-color: #257aca;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-info button:hover {
+    background-color: rgb(188, 188, 192);
+    color: black;
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 20px;
+    }
+}

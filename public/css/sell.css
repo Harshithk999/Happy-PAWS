@@ -1,0 +1,117 @@
+/* Reset default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Climate+Crisis&family=DynaPuff:wght@400..700&family=Honk&family=Kablammo&family=Nabla&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Antonio', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+nav {
+    background-color: #257aca;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 75px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: color 0.3s, text-decoration 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #257aca;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #257aca;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #257aca;
+    outline: none;
+    box-shadow: 0 0 5px rgba(201, 209, 217, 0.5);
+}
+
+button {
+    background-color: #257aca;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+    }
+}

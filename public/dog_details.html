@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Details - Pet Website</title>
+    <link rel="stylesheet" href="css/dog_details.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/assets/logo.jpg" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="buy_dogs.html">Buy Dogs</a></li>
+            <li><a href="sell_dog.html">Sell Dog</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="dog-details-container">
+            <div class="dog-details">
+                <img id="dogImage" alt="Dog Image">
+                <div class="dog-info">
+                    <h1 id="dogBreed"></h1>
+                    <p><strong>Price:</strong> ₹<span id="dogPrice"></span></p>
+                    <p><strong>Color:</strong> <span id="dogColor"></span></p>
+                    <p><strong>Age:</strong> <span id="dogAge"></span></p>
+                    <button id="buyButton">Buy</button>
+                </div>
+            </div>
+            <div class="dog-description">
+                <h2>Description</h2>
+                <p id="dogDescription"></p>
+            </div>
+            <div class="reviews-section">
+                <h2>Reviews</h2>
+                <div id="reviewsContainer"></div>
+                <div class="add-review">
+                    <textarea id="reviewText" rows="4" placeholder="Add your review here"></textarea>
+                    <button id="submitReview">Submit Review</button>
+                    <button id="backButton">Back</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/dog_details.js"></script>
+</body>
+</html>

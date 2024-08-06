@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Website - Sell</title>
+    <link rel="stylesheet" href="css/sell.css">
+</head>
+<body>
+    <nav style="font-family: 'Antonio'">
+        <div class="logo">
+            <img src="/assets/logo.jpg" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="buy.html">BUY DOGS</a></li>
+            <li><a href="sell.html">SELL DOGS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Sell Your Dog</h1>
+        <form id="sellForm" enctype="multipart/form-data">
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" required>
+            
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </main>
+    <script src="js/sell.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* Reset default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Climate+Crisis&family=DynaPuff:wght@400..700&family=Honk&family=Kablammo&family=Nabla&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label[for="username"],
+input#username {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input#username {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(135deg, #145da0, #2e8bc0); */
+    background-image: url('../uploads/register.jpg'); 
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #145da0;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #145da0;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #145da0;
+    outline: none;
+    box-shadow: 0 0 5px rgba(20, 93, 160, 0.5);
+}
+
+button {
+    background-color: #145da0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0c2d48;
+}
+
+p {
+    margin-top: 15px;
+    color: #333;
+}
+
+a {
+    color: #145da0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+}

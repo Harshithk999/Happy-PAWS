@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Requests - Pet Website</title>
+    <link rel="stylesheet" href="css/admin_sell_requests.css">
+</head>
+<body>
+    <nav style="font-family: 'Antonio';">
+        <div class="logo">
+            <img src="/assets/logo.jpg" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="admin_dashboard.html">DASHBOARD</a></li>
+            <li><a href="admin_add_dog.html">ADD DOG</a></li>
+            <li><a href="admin_login.html" id="logoutButton">LOGOUT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 style="font-family: 'Tourney';">SELL REQUESTS</h1>
+        <table id="sellRequestsTable">
+            <thead>
+                <tr style="font-family: 'Antonio';">
+                    <th>ID</th>
+                    <th>BREED</th>
+                    <th>AGE</th>
+                    <th>COLOR</th>
+                    <th>PRICE (₹)</th>
+                    <th>ADDRESS</th>
+                    <th>DESCRIPTION</th>
+                    <th>IMAGE</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </main>
+    <script src="js/admin_sell_requests.js"></script>
+</body>
+</html>

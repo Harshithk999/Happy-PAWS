@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Pet Website</title>
+    <link rel="stylesheet" href="css/admin_dashboard.css">
+</head>
+<body>
+    <nav style="font-family: 'Antonio';">
+        <div class="logo">
+            <img src="/assets/logo.jpg" alt="Logo">
+        </div>
+        <ul>
+            <!-- <li><a href="admin_dashboard.html">DASHBOARD</a></li> -->
+            <li><a href="admin_add_dog.html">ADD DOG</a></li>
+            <li><a href="admin_sell_requests.html">SELL REQUESTS</a></li>
+            <li><a href="admin_login.html" id="logoutButton">LOGOUT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 style="font-family: 'Tourney';">DOGS CURRENTLY ON SALE</h1>
+        <div class="dog-grid" id="dogGrid">
+            <!-- Dog boxes will be populated here -->
+        </div>
+    </main>
+    <script src="js/admin_dashboard.js"></script>
+</body>
+</html>

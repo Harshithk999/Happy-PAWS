@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Climate+Crisis&family=DynaPuff:wght@400..700&family=Honk&family=Kablammo&family=Nabla&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; */
+}
+
+nav {
+    background-color: #257aca;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 75px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    /* border-radius: 4px; */
+    transition: color 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    /* background-color: #0c2d48; */
+    color: black;
+}
+
+/* header {
+    position: relative;
+    height: 60vh;
+    background-color: #0c2d48;
+}
+
+header .banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+header .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+header .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+header .banner-text h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header .banner-text p {
+    font-size: 1.2em;
+} */
+
+/* .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+} */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10vw, 1fr));
+    gap: 1vw;
+    margin: 1vw;
+    width: calc(100vw - 2vw); /* Account for the margin */
+}
+
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.grid-item:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-item:nth-child(2),
+.grid-item:nth-child(3) {
+    grid-row: span 2;
+}
+
+.grid-item:nth-child(6),
+.grid-item:nth-child(9) {
+    grid-column: span 2;
+} 
+
+
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.mySlides {
+    display: none;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 20px; */
+    padding: 20px;
+}
+
+/* .actions {
+    display: flex;
+    gap: 20px;
+}
+
+.actions .button {
+    background-color: #257aca;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: color 0.3s;
+}
+
+.actions .button:hover {
+    background-color: white;
+    color: black;
+    transition: color 0.3s, text-decoration 0.3s;
+} */
+
+/* .action-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+} */
+
+.section-container {
+    max-width: 100%; /* Set max-width to a percentage to leave space on the sides */
+    margin: 0 auto; /* Center the container */
+    padding: 20px 0;
+    gap: 30px;
+}
+
+.action-section {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 40px;
+    background-color: #257aca; /* Light background color */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 800px; /* Limit width for a more rectangular shape */
+    height: 250px;
+}
+
+.action-section .image-link {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.action-section .image-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.action-section .text-overlay {
+    flex: 1;
+    padding: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-family: 'Antonio', sans-serif; /* Change font as per your preference */
+}
+
+.text-overlay h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-overlay p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.image-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.image-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-link:hover img {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #0c2d48;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    margin: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #b1d4e0;
+}
+
+.footer-bottom {
+    background-color: #145da0;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .action-section {
+        flex-direction: column;
+    }
+
+    .text-overlay {
+        text-align: center;
+        padding: 10px;
+    }
+    .text-overlay h2 {
+        font-size: 1.5em;
+    }
+
+    .text-overlay p {
+        font-size: 1em;
+    }
+}

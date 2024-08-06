@@ -1,0 +1,220 @@
+/* Reset default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Climate+Crisis&family=DynaPuff:wght@400..700&family=Honk&family=Kablammo&family=Nabla&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+nav {
+    background-color: #257aca;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: color 0.3s, text-decoration 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+button#backButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #257aca;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#backButton:hover {
+    background-color: #0c2d48;
+}
+
+.dog-details-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dog-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.dog-details img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.dog-info {
+    text-align: left;
+    flex: 1;
+}
+
+.dog-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #257aca;
+}
+
+.dog-info p {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 18px;
+}
+
+.dog-info strong {
+    color: #257aca;
+}
+
+button#buyButton {
+    background-color: #257aca;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#buyButton:hover {
+    background-color: #0c2d48;
+}
+
+.dog-description {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.reviews-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.add-review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.add-review textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.add-review button {
+    background-color: #257aca;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-review button:hover {
+    background-color: #0c2d48;
+}
+
+#reviewsContainer {
+    margin-top: 20px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.review h3 {
+    margin-bottom: 5px;
+    color: #257aca;
+    font-size: 18px;
+}
+
+.review p {
+    margin: 0;
+    color: #666;
+}
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #257aca;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+.back-button:hover {
+    background-color: #0c2d48;
+}

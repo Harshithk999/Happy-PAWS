@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Dog - Pet Website</title>
+    <link rel="stylesheet" href="css/admin_add_dog.css">
+</head>
+<body>
+    <nav style="font-family: 'Antonio';">
+        <div class="logo">
+            <img src="/assets/logo.jpg" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="admin_dashboard.html">DASHBOARD</a></li>
+            <li><a href="admin_sell_requests.html">SELL REQUESTS</a></li>
+            <li><a href="admin_login.html" id="logoutButton">LOGOUT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 style="font-family: 'Tourney';">ADD DOG</h1>
+        <form id="addDogForm" enctype="multipart/form-data" style="font-family: 'Antonio';">
+            <label for="breed">BREED:</label>
+            <input type="text" id="breed" name="breed" required>
+            
+            <label for="age">AGE:</label>
+            <input type="number" id="age" name="age" required min="0">
+            
+            <label for="color">COLOR:</label>
+            <input type="text" id="color" name="color" required>
+            
+            <label for="price">PRICE (₹):</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="description">DESCRIPTION:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            
+            <label for="image">IMAGE:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            
+            <button type="submit" style="font-family: 'Antonio';">ADD</button>
+        </form>
+        <p id="confirmationMessage"></p>
+    </main>
+    <script src="js/admin_add_dog.js"></script>
+</body>
+</html>
