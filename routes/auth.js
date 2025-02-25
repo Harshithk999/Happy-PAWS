@@ -182,7 +182,7 @@ router.post('/sell', upload.single('image'), (req, res) => {
 // Admin login
 router.post('/adminLogin', (req, res) => {
     const { email, password } = req.body;
-    const adminEmail = ''; // replace with actual admin email
+    const adminEmail = 'harshithkotian999@gmail.com'; // replace with actual admin email
     const adminPassword = 'admin'; // replace with actual admin password
 
     if (email === adminEmail && password ===adminPassword) {
